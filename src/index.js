@@ -6,7 +6,7 @@ const gameEngine = (gameFunc) => {
   const startVars = gameFunc();
   const startQuestion = startVars[0];
   console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
+  const name = readlineSync.question('May I have your name?');
   console.log(`Hello, ${name}`);
   console.log(startQuestion);
 
