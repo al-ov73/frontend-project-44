@@ -6,10 +6,15 @@
 Первый проект Hexlet на языке Java Script:
 Игры для мозга
 
-Игра brain-even:
+1. Игра brain-even:
 угадайка четности числа
 
 [![asciicast](https://asciinema.org/a/yynlQsaxeatmeuaNUAc0mRJMy.svg)](https://asciinema.org/a/yynlQsaxeatmeuaNUAc0mRJMy)
 
+2. Игра brain-calc:
 Посчитай значение выражения
 [![asciicast](https://asciinema.org/a/636576.svg)](https://asciinema.org/a/636576)
+
+3. Игра brain-gcd:
+Найди наибольший общий делитель двух чисел
+[![asciicast](https://asciinema.org/a/636578.svg)](https://asciinema.org/a/636578)

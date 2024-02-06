@@ -1,7 +1,5 @@
 import readlineSync from 'readline-sync';
 
-const gamesNumbers = 3;
-
 const randomChoice = (arr) => {
     return arr[Math.floor(arr.length * Math.random())];
 };
