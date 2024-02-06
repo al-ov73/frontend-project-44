@@ -1,6 +1,6 @@
 const randomChoice = (arr) => (arr[Math.floor(arr.length * Math.random())]);
 
-const brainEven = () => {
+const brainCalc = () => {
   const startQuestion = 'What is the result of the expression?';
   const firstNumber = Math.floor(Math.random() * 10);
   const secondNumber = Math.floor(Math.random() * 10);
@@ -19,4 +19,4 @@ const brainEven = () => {
   return [startQuestion, question, textAnswer];
 };
 
-export default brainEven;
+export default brainCalc;
