@@ -5,3 +5,8 @@
 
 Первый проект Hexlet на языке Java Script:
 Игры для мозга
+
+Игра brain-even:
+угадайка четности числа
+
+[![asciicast](https://asciinema.org/a/yynlQsaxeatmeuaNUAc0mRJMy.svg)](https://asciinema.org/a/yynlQsaxeatmeuaNUAc0mRJMy)
