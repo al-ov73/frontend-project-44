@@ -10,3 +10,6 @@
 угадайка четности числа
 
 [![asciicast](https://asciinema.org/a/yynlQsaxeatmeuaNUAc0mRJMy.svg)](https://asciinema.org/a/yynlQsaxeatmeuaNUAc0mRJMy)
+
+Посчитай значение выражения
+[![asciicast](https://asciinema.org/a/636576.svg)](https://asciinema.org/a/636576)
