@@ -1,15 +1,13 @@
-import readlineSync from 'readline-sync';
-
-const get_gcd = (x, y) => {
-  x = Math.abs(x);
-  y = Math.abs(y);
-  while(y) {
-    var t = y;
+const getGcd = (firstNumber, secondNumber) => {
+  let x = Math.abs(firstNumber);
+  let y = Math.abs(secondNumber);
+  while (y) {
+    const temp = y;
     y = x % y;
-    x = t;
+    x = temp;
   }
   return x;
-}
+};
 
 const brainGcd = () => {
   const startQuestion = 'Find the greatest common divisor of given numbers.';
@@ -17,11 +15,10 @@ const brainGcd = () => {
   const secondNumber = Math.floor(Math.random() * 100);
 
   const question = `${firstNumber} ${secondNumber}`;
-  const answer = get_gcd(firstNumber, secondNumber);
+  const answer = getGcd(firstNumber, secondNumber);
 
   const textAnswer = answer.toString();
   return [startQuestion, question, textAnswer];
 };
-
 
 export default brainGcd;

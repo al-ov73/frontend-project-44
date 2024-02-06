@@ -1,8 +1,4 @@
-import readlineSync from 'readline-sync';
-
-const randomChoice = (arr) => {
-    return arr[Math.floor(arr.length * Math.random())];
-};
+const randomChoice = (arr) => (arr[Math.floor(arr.length * Math.random())]);
 
 const brainEven = () => {
   const startQuestion = 'What is the result of the expression?';
@@ -22,6 +18,5 @@ const brainEven = () => {
   const textAnswer = answer.toString();
   return [startQuestion, question, textAnswer];
 };
-
 
 export default brainEven;

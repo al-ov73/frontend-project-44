@@ -3,8 +3,8 @@ import readlineSync from 'readline-sync';
 const gamesNumbers = 3;
 
 const gameEngine = (gameFunc) => {
-  let vars = gameFunc()
-  const startQuestion = vars[0]
+  const startVars = gameFunc();
+  const startQuestion = startVars[0];
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}`);
@@ -12,9 +12,9 @@ const gameEngine = (gameFunc) => {
 
   let count = 0;
   while (count < gamesNumbers) {
-    let vars = gameFunc()
-    const question = vars[1]
-    const rightAnswer = vars[2]
+    const vars = gameFunc();
+    const question = vars[1];
+    const rightAnswer = vars[2];
 
     console.log(`Question: ${question}`);
     const playerAnswer = readlineSync.question('Your answer: ');

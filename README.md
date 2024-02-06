@@ -18,3 +18,7 @@
 3. Игра brain-gcd:
 Найди наибольший общий делитель двух чисел
 [![asciicast](https://asciinema.org/a/636578.svg)](https://asciinema.org/a/636578)
+
+4. Игра brain-progression:
+Вставь пропущенное в прогрессии число
+[![asciicast](https://asciinema.org/a/636596.svg)](https://asciinema.org/a/636596)
