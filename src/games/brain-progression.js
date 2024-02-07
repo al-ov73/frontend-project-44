@@ -15,7 +15,7 @@ const brainProgression = () => {
     const number = firstNumber + (step * (i + 1));
     if (i === randomIndex) {
       textAnswer = number.toString();
-      numbersList = `${numbersList} ...`;
+      numbersList = `${numbersList} ..`;
     } else {
       numbersList = `${numbersList} ${number}`;
     }
