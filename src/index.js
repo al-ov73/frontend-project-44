@@ -24,7 +24,7 @@ const gameEngine = (gameFunc) => {
       count += 1;
     } else {
       console.log(`${playerAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.`);
-      console.log(`Let's try again, ${name}!`)
+      console.log(`Let's try again, ${name}!`);
       return;
     }
   }
