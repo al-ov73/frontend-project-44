@@ -1,7 +1,7 @@
 const minRange = 5;
 const maxRange = 12;
 
-const brainEven = () => {
+const brainProgression = () => {
   const startQuestion = 'What number is missing in the progression?';
   const firstNumber = Math.floor(Math.random() * 20);
   const step = Math.floor(Math.random() * 10);
@@ -24,4 +24,4 @@ const brainEven = () => {
   return [startQuestion, question, textAnswer];
 };
 
-export default brainEven;
+export default brainProgression;
