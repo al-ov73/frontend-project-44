@@ -28,4 +28,3 @@ const brainGcd = () => {
 const runGame = () => (runGameEngine(description, brainGcd));
 
 export default runGame;
-
