@@ -24,7 +24,7 @@ const brainProgression = () => {
   const answer = progression[randomIndex].toString();
   progression[randomIndex] = '..';
 
-  const question = progression.join(', ').trim();
+  const question = progression.join(' ').trim();
   return [question, answer];
 };
 
