@@ -1,3 +1,6 @@
+import runGameEngine from '../index.js';
+import { generateNumber } from '../utils.js';
+
 const getGcd = (firstNumber, secondNumber) => {
   let x = Math.abs(firstNumber);
   let y = Math.abs(secondNumber);
@@ -9,16 +12,20 @@ const getGcd = (firstNumber, secondNumber) => {
   return x;
 };
 
+const description = 'What is the result of the expression?';
+
 const brainGcd = () => {
-  const startQuestion = 'Find the greatest common divisor of given numbers.';
-  const firstNumber = Math.floor(Math.random() * 100);
-  const secondNumber = Math.floor(Math.random() * 100);
+  const firstNumber = generateNumber(1, 100);
+  const secondNumber = generateNumber(1, 100);
 
   const question = `${firstNumber} ${secondNumber}`;
   const answer = getGcd(firstNumber, secondNumber);
 
   const textAnswer = answer.toString();
-  return [startQuestion, question, textAnswer];
+  return [question, textAnswer];
 };
 
-export default brainGcd;
+const runGame = () => (runGameEngine(description, brainGcd));
+
+export default runGame;
+

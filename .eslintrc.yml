@@ -1,6 +1,5 @@
 ---
 
-# https://eslint.org/docs/user-guide/configuring#specifying-environments
 env:
   node: true
 
@@ -16,5 +15,4 @@ rules:
     - error
     - ignorePackages
     - js: always
-  no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]
   linebreak-style: "off"

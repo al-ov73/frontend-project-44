@@ -2,8 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/al-ov73/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/al-ov73/frontend-project-44/actions)",
-  "main": "index.js",
+  "description": "Five cli games for your brain",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
