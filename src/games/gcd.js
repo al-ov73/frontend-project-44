@@ -12,7 +12,7 @@ const getGcd = (firstNumber, secondNumber) => {
   return x;
 };
 
-const description = 'What is the result of the expression?';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const brainGcd = () => {
   const firstNumber = generateNumber(1, 100);
