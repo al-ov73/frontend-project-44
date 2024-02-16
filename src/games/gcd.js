@@ -1,5 +1,5 @@
 import runGameEngine from '../index.js';
-import { generateNumber } from '../utils.js';
+import generateNumber from '../utils.js';
 
 const getGcd = (firstNumber, secondNumber) => {
   let x = Math.abs(firstNumber);
@@ -14,7 +14,7 @@ const getGcd = (firstNumber, secondNumber) => {
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const brainGcd = () => {
+const generateRound = () => {
   const firstNumber = generateNumber(1, 100);
   const secondNumber = generateNumber(1, 100);
 
@@ -25,6 +25,6 @@ const brainGcd = () => {
   return [question, textAnswer];
 };
 
-const runGame = () => (runGameEngine(description, brainGcd));
+const runGame = () => (runGameEngine(description, generateRound));
 
 export default runGame;

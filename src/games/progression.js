@@ -1,5 +1,5 @@
 import runGameEngine from '../index.js';
-import { generateNumber } from '../utils.js';
+import generateNumber from '../utils.js';
 
 const minRange = 5;
 const maxRange = 12;
@@ -14,20 +14,20 @@ const generateProgression = (first, step, length) => {
   return result;
 };
 
-const brainProgression = () => {
+const generateRound = () => {
   const firstNumber = generateNumber(1, 20);
   const step = generateNumber(1, 10);
   const length = generateNumber(minRange, maxRange);
-  const randomIndex = generateNumber(0, (length - 1));
 
   const progression = generateProgression(firstNumber, step, length);
-  const answer = progression[randomIndex].toString();
-  progression[randomIndex] = '..';
+  const hiddenIndex = generateNumber(0, (progression.length - 1));
+  const answer = progression[hiddenIndex].toString();
+  progression[hiddenIndex] = '..';
 
   const question = progression.join(' ').trim();
   return [question, answer];
 };
 
-const runGame = () => (runGameEngine(description, brainProgression));
+const runGame = () => (runGameEngine(description, generateRound));
 
 export default runGame;
